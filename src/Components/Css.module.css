@@ -1,0 +1,553 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat';
+}
+
+/* HOME */
+
+.home{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../assets/images/home_back.png");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 1170px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    margin-top: 60px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.menu{
+    /* margin-left: 120px; */
+    font-family: 'Montserrat';
+    width: 655px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+.headerHome{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+    color: white;
+}
+.weare{
+    margin-top: 350px;
+    height: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 20%;
+}
+.weareItem{
+    display: flex;
+    align-items: center;
+    
+}
+.weareItem span{
+    margin-left: 27px;
+    color: white;
+    font-size: 18px;
+}
+.getService{
+    background-color: #FF3C00;
+    outline: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 35px;
+    width: 373px;
+    height: 81px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    top: -40px;
+}
+
+/* CYCLE BLOCK */
+
+.cycle{
+    height: 1120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.containerCycle{
+    width: 1170px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cycleHeader{
+    text-align: center;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 88px;
+    color: #000C9F;
+    margin-block-start: 0em;
+}
+.selector{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.selectorText{
+    text-align: center;
+}
+.selectorTextBold{
+    font-weight: bold;
+}
+.getMore{
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 160px;
+    font-family: 'Montserrat';
+}
+.getMoreItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+.getMoreItem a{
+    text-decoration: none;
+    color: #FF3C00;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    padding: 8px 8px;
+    border: 1px solid #000C9F;
+}
+
+/* GIFT BLOCK */
+
+.gift{
+    width: 100%;
+    height: 420px;
+    background-color: #E4F3FF;
+    display: flex;
+    justify-content: center;
+}
+.giftContainer{
+    width: 850px;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.wantGift{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.giftHeader{
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 88px;
+    color: #FF3C00;
+    margin-block-start: 0em;
+}
+.wantGift button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #000C9F;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 196px;
+}
+.wantGift span{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 5px;
+}
+.giftImg{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+    width: 100%;
+    height: 1060px;
+    display: flex;
+    justify-content: center;
+}
+.portfolioContainer{
+    width: 1170px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolioHeader{
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 88px;
+    text-align: center;
+    color: #000C9F;
+    margin-top: 130px;
+}
+.portfolioItems{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* PAIN */
+
+.pain{
+    width: 100%;
+    height: 1260px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFE4D4;
+}
+.painContainer{
+    width: 1170px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.painHeader{
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 88px;
+    text-align: center;
+    color: #000C9F;
+}
+.reasonsBlock{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+.reasons{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reason{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.reason span{
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 40px;
+}
+.waves{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+/* OVERHERE */
+
+.overhere{
+    width: 100%;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+}
+.overhereContainer{
+    width: 1170px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    background-color: #000C9F;
+    position: relative;
+    top: -120px;
+}
+.overhereItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    color: white;
+}
+.overhereItems h3{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin-block-start: 0.3em;
+    margin-block-end: 0;
+}
+.overhereItems span{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+.overhereItems button{
+    width: 410px;
+    height: 90px;
+    background-color: #FF3C00;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+
+/* SERVICES */
+
+.services{
+    width: 100%;
+    height: 2290px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFE4D4;
+}
+.servicesContainer{
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicesContainer h1{
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 88px;
+    text-align: center;
+    color: #FF3C00;
+    margin-block-start: 100px;
+    margin-block-end: 80px;
+}
+.service{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.serviceSide{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.serviceSide h4{
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 25px;
+    color: #FF3C00;
+    margin-block-start: 0.3em;
+}
+.serviceBlock{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.serviceBlueBlock{
+    background-color: #000C9F;
+    width: 330px;
+    height: 250px;
+}
+.serviceBlueBlockSpan{
+    background-color: #000C9F;
+    width: calc(330px - 32px);
+    height: calc(250px - 33px);
+    padding-left: 32px;
+    padding-top: 33px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.serviceOrangeBlockSpan{
+    background-color: #FF7425;
+    width: calc(330px - 32px);
+    height: calc(250px - 33px);
+    padding-left: 32px;
+    padding-top: 33px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.serviceImg{
+    position: relative;
+    top: -12px;
+    left: -17px;
+    background-color: #000C9F;
+}
+.services button{
+    width: 365px;
+    height: 80px;
+    background-color: #000C9F;
+    color: white;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 49px;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 120px;
+}
+
+
+/* BLOG */
+
+.blog{
+    width: 100%;
+    height: 822px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/images/blog_back.png');
+}
+.blogContainer{
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blogHeader{
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 88px;
+    text-align: center;
+    color: #000C9F;
+    margin-block-end: 100px;
+}
+.lorem{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* CONTACT */
+
+.contact{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+.contactContainer{
+    width: 850px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contactHeader{
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 88px;
+    text-align: center;
+    color: #FF3C00;
+    margin-block-end: 0;
+}
+.links{
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.contactContainer span{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+.contactContainer button{
+    width: 373px;
+    height: 89px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 49px;
+    background-color: #000C9F;
+}
+.languages{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.language a{
+    color: #FF7425;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 2px 6px;
+    border: 1px solid #FF7425;
+}
+.language a.active{
+    background-color: #FF7425;
+    color: white;
+}
+
+
+@media screen and (max-width: 1440px){
+    .home{
+        height: 850px;
+    }
+    .weare{
+        margin-top: 280px;
+    }
+}
