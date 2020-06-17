@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Route, Router, BrowserRouter, Switch, Redirect } from "react-router-dom";
+import { Route, Router, BrowserRouter, Switch, Redirect, HashRouter } from "react-router-dom";
 import Ru from './Components/Ru/Ru';
 import Ua from './Components/Ua/Ua';
 import En from './Components/En/En';

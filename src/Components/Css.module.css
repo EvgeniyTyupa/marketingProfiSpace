@@ -4,6 +4,33 @@
     font-family: 'Montserrat';
 }
 
+
+
+
+/* MOBILE DEVICE DESKTOP */
+.mainMobile{
+    display: none;
+}
+.navbarIpad{
+    display: none;
+}
+.getMoreIpad{
+    display: none;
+}
+.headerHomeIpad{
+    display: none;
+}
+.painContainerIpad{
+    display: none;
+}
+.serviceIpad{
+    display: none;
+}
+.loremIpad{
+    display: none;
+}
+
+
 /* HOME */
 
 .home{
@@ -46,6 +73,11 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.menu a:hover{
+    transform: scale(1.1);
 }
 .headerHome{
     font-weight: 600;
@@ -86,6 +118,11 @@
     font-weight: 500;
     position: relative;
     top: -40px;
+    transition-duration: 0.3s;
+}
+.getService:hover{
+    background-color: white;
+    color: #FF3C00;
 }
 
 /* CYCLE BLOCK */
@@ -150,6 +187,9 @@
     padding: 8px 8px;
     border: 1px solid #000C9F;
 }
+.getMoreItem a:hover{
+    text-decoration: underline #FF3C00;
+}
 
 /* GIFT BLOCK */
 
@@ -193,6 +233,10 @@
     padding: 10px 20px;
     text-align: center;
     width: 196px;
+    transition-duration: 0.3s;
+}
+.wantGift button:hover{
+    transform: scale(1.1);
 }
 .wantGift span{
     font-weight: 500;
@@ -220,6 +264,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 .portfolioHeader{
     font-weight: 900;
@@ -342,6 +387,11 @@
     cursor: pointer;
     font-weight: 600;
     font-size: 40px;
+    transition-duration: 0.3s;
+}
+.overhereItems button:hover{
+    background-color: white;
+    color: #FF3C00;
 }
 
 
@@ -440,8 +490,12 @@
     border: none;
     cursor: pointer;
     margin-top: 120px;
+    transition-duration: 0.3s;
 }
-
+.services button:hover{
+    background-color: #FF3C00;
+    color: white;
+}
 
 /* BLOG */
 
@@ -520,6 +574,10 @@
     font-size: 35px;
     line-height: 49px;
     background-color: #000C9F;
+    transition-duration: 0.3s;
+}
+.contactContainer button:hover{
+    background-color: #FF3C00;
 }
 .languages{
     display: flex;
@@ -549,5 +607,293 @@
     }
     .weare{
         margin-top: 280px;
+    }
+}
+@media screen and (max-width: 1170px){
+    /* HOME */
+    .container{
+        width: 960px;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbarIpad{
+        margin-top: 60px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+    }
+    .languages{
+        width: 350px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .language a{
+        font-size: 30px;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+    .burger{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        /* position: fixed;
+        top: 60px;
+        right: 5%; */
+    }
+    .line{
+        width: 100%;
+        height: 15px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .headerHome{
+        display: none;
+    }
+    .headerHomeIpad{
+        display: block;
+        font-size: 40px;
+        color: white;
+        font-weight: 600;
+        line-height: 61px;
+        margin-top: 75px;
+    }
+    .weare{
+        margin-top: 260px;
+    }
+    .weareItem{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 33%;
+    }
+    .weareItem span{
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    
+    /* CYCLE */
+    .cycle{
+        height: 1320px;
+    }
+    .containerCycle{
+        width: 960px;
+    }
+    .getMore{
+        display: none;
+    }
+    .getMoreIpad{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 550px;
+        width: 70%;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    .getMoreRow{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    /* GIFT */
+    .giftContainer{
+        width: 768px;
+    }
+    .giftHeader{
+        font-size: 58px;
+    }
+
+    /* PORTFOLIO */
+    .portfolioContainer{
+        width: 960px;
+    }
+    .portfolioContainer img{
+        width: 200px;
+    }
+    .portfolioItems{
+        justify-content: space-around;
+    }
+    /* PAIN */
+    .pain{
+        height: 1500px;
+    }
+    .painContainer{
+        display: none;
+    }
+    .painContainerIpad{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 768px;
+    }
+    .reason span{
+        font-size: 24px;
+    }
+    .waves{
+        display: flex;
+        align-items: center;
+    }
+    
+    .wavesimgs{
+        width: 130px;
+    }
+    .bigwave{
+        width: 90px;
+    }
+    .reasonsText{
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .reasons{
+        width: 100%;
+    }
+
+    
+    
+    /* SERVICE */
+    .services{
+        height: 1400px;
+    }
+    .servicesContainer{
+        width: 960px;
+    }
+    .service{
+        display: none;
+    }
+    .serviceIpad{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    .serviceFoot{
+        display: flex;
+        align-items: center;
+        padding-left: 70px;
+    }
+    .serviceFoot img{
+        margin-left: 30px;
+    }
+    .services button{
+        margin-top: 80px;
+    }
+    /* BLOG */
+    .blogContainer{
+        width: 960px;
+    }
+    .loremIpad{
+        display: flex;
+    }
+    .lorem{
+        display: none;
+    }
+    .contactContainer{
+        width: 768px;
+    }
+
+}
+@media screen and (max-width: 768px){
+
+    .container{
+        width: 700px;
+    }
+    .navbarIpad img{
+        width: 120px;
+        position: relative;
+        top: 10px;
+    }
+    .languages{
+        width: 260px;
+    }
+    .language a{
+        padding: 5px 10px;
+    }
+    .headerHomeIpad{
+        font-size: 35px;
+    }
+    .weare{
+        margin-top: 240px;
+    }
+    .containerCycle{
+        width: 700px;
+    }
+    .getService{
+        padding: 20px 15px;
+    }
+    .cycleHeader{
+        font-size: 60px;
+    }
+    .selector{
+        width: 100%;
+    }
+    .portfolioContainer{
+        width: 700px;
+    }
+    .portfolioContainer img{
+        width: 150px;
+    }
+    .portfolioItems{
+        justify-content: space-evenly;
+    }
+    .getMoreItem{
+        width: 200px;
+    }
+    .getMoreRow{
+        margin-bottom: 50px;
+    }
+    .getMoreIpad{
+        width: 100%;
+    }
+    .portfolio{
+        height: 850px;
+    }
+    .giftContainer{
+        width: 568px;
+    }
+    .gift{
+        height: 360px;
+    }
+    .giftImg img{
+        width: 250px;
+    }
+    .giftHeader{
+        font-size: 41px;
+        line-height: 58px;
+    }
+    .painContainerIpad{
+        width: 700px;
+    }
+    .servicesContainer{
+        width: 700px;
+    }
+    .blogContainer{
+        width: 700px;
+    }
+    .contactContainer{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .main{
+        display: none;
     }
 }
