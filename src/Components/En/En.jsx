@@ -212,7 +212,7 @@ const En = (props) => {
                 <div className={classes.giftContainer}>
                     <div className={classes.wantGift}>
                         <h1 className={classes.giftHeader} data-aos="fade-bottom">I want <br/> Gift!</h1>
-                        <button>GET</button>
+                        <a href="src/assets/docs/filmsEn.pdf" download>GET</a>
                         <span>list of movies <br/> on "marketing"</span>
                     </div>
                     <div className={classes.giftImg}>
@@ -656,7 +656,7 @@ const En = (props) => {
                 </div>
                 <div className={mobile.gift}>
                     <h1 data-aos = "fade-bottom"> I want <br /> Gift! </h1>
-                     <button> GET </button>
+                    <a href="src/assets/docs/filmsEn.pdf" download> GET </a>
                      <span> movie list <br /> on the topic of marketing </span>
                 </div>
                 <div className={mobile.portfolio} id="portfolioM">

@@ -215,7 +215,7 @@ const Ua = (props) => {
                     <div className={classes.giftContainer}>
                         <div className={classes.wantGift}>
                             <h1 className={classes.giftHeader} data-aos="fade-bottom">Хочу <br />Подарунок!</h1>
-                            <button>ОТРИМАТИ</button>
+                            <a href="src/assets/docs/filmsUa.pdf" download>ОТРИМАТИ</a>
                             <span>список фільмів <br />по темі "маркетинг"</span>
                         </div>
                         <div className={classes.giftImg}>
@@ -658,7 +658,7 @@ const Ua = (props) => {
                 </div>
                 <div className={mobile.gift}>
                     <h1 data-aos="fade-bottom">Хочу <br />Подарунок!</h1>
-                    <button>ОТРИМАТИ</button>
+                    <a href="src/assets/docs/filmsUa.pdf" download>ОТРИМАТИ</a>
                     <span>список фільмів <br /> по темі "маркетинг"</span>
                 </div>
                 <div className={mobile.portfolio} id="portfolioM">

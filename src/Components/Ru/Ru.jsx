@@ -66,6 +66,8 @@ import blogItem_mobile from '../../assets/images/mobile/blogItem.png';
 import logoMobile from '../../assets/images/mobile/logoMobile.png';
 import Burger from '../Burger/Burger';
 import triangle_bot from '../../assets/images/mobile/triangle_bot.png';
+import Modal from '../Modal/Modal';
+import { useState } from 'react';
 
 
 
@@ -75,8 +77,12 @@ const Ru = (props) => {
         Aos.init({ duration: 1000 });
     }, []);
 
+    const [show, setShow] = useState(false);
+    
+
     return (
         <>
+
             <div className={classes.main}>
 
                 {/* HOME */}
@@ -154,28 +160,29 @@ const Ru = (props) => {
                             <div className={classes.getMoreItem}>
                                 <img src={audit} />
                                 <span>Маркетинговый <br />аудит</span>
-                                <a href="#">Узнать больше</a>
+                                <button onClick={()=>setShow(!show)}>Узнать больше</button>
                             </div>
                             <div className={classes.getMoreItem}>
                                 <img src={strategy} />
                                 <span>Маркетинговые <br />стратегии</span>
-                                <a href="#">Узнать больше</a>
+                                <button onClick={()=>setShow(!show)}>Узнать больше</button>
                             </div>
                             <div className={classes.getMoreItem}>
                                 <img src={smm} />
                                 <span>SMM (таргетинг и <br />продвижение)</span>
-                                <a href="#">Узнать больше</a>
+                                <button onClick={()=>setShow(!show)}>Узнать больше</button>
                             </div>
                             <div className={classes.getMoreItem}>
                                 <img src={pc} />
                                 <span>Умный<br />лендинг</span>
-                                <a href="#">Узнать больше</a>
+                                <button onClick={()=>setShow(!show)}>Узнать больше</button>
                             </div>
                             <div className={classes.getMoreItem}>
                                 <img src={pazzle} />
                                 <span>Визуальное <br />оформление</span>
-                                <a href="#">Узнать больше</a>
+                                <button onClick={()=>setShow(!show)}>Узнать больше</button>
                             </div>
+                            <Modal show={show} setShow={setShow}/>
                         </div>
                         <div className={classes.getMoreIpad}>
                             <div className={classes.getMoreRow}>
@@ -217,7 +224,7 @@ const Ru = (props) => {
                     <div className={classes.giftContainer}>
                         <div className={classes.wantGift}>
                             <h1 className={classes.giftHeader} data-aos="fade-bottom">Хочу <br />Подарок!</h1>
-                            <button>ПОЛУЧИТЬ</button>
+                            <a href="src/assets/docs/filmsRu.pdf" download>ПОЛУЧИТЬ</a>
                             <span>список фильмов <br />по теме "маркетинг"</span>
                         </div>
                         <div className={classes.giftImg}>
@@ -659,7 +666,7 @@ const Ru = (props) => {
                 </div>
                 <div className={mobile.gift}>
                     <h1 data-aos="fade-bottom">Хочу <br />Подарок!</h1>
-                    <button>ПОЛУЧИТЬ</button>
+                    <a href="src/assets/docs/filmsRu.pdf" download>ПОЛУЧИТЬ</a>
                     <span>список фильмов <br />по теме "маркетинг"</span>
                 </div>
                 <div className={mobile.portfolio} id="portfolioM">

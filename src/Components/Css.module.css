@@ -177,7 +177,7 @@
     text-align: center;
     height: 200px;
 }
-.getMoreItem a{
+.getMoreItem button{
     text-decoration: none;
     color: #FF3C00;
     font-weight: 600;
@@ -186,8 +186,11 @@
     text-align: center;
     padding: 8px 8px;
     border: 1px solid #000C9F;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
 }
-.getMoreItem a:hover{
+.getMoreItem button:hover{
     text-decoration: underline #FF3C00;
 }
 
@@ -222,7 +225,7 @@
     color: #FF3C00;
     margin-block-start: 0em;
 }
-.wantGift button{
+.wantGift a{
     border: none;
     outline: none;
     cursor: pointer;
@@ -234,8 +237,9 @@
     text-align: center;
     width: 196px;
     transition-duration: 0.3s;
+    text-decoration: none;
 }
-.wantGift button:hover{
+.wantGift a:hover{
     transform: scale(1.1);
 }
 .wantGift span{
