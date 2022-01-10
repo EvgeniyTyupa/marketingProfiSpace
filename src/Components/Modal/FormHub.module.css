@@ -1,0 +1,68 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 345678;
+    left: 0;
+}
+.main form{
+    width: 40%;
+    height: max-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    box-sizing: border-box;
+}
+.close{
+    align-self: flex-end;
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+.field{
+    width: 100%;
+    margin-top: 15px;
+}
+.field div{
+    width: 100%;
+}
+.main form button[type="submit"]{
+    background-color: #FF3C00 !important;
+    color: white !important;
+    margin-top: 55px !important;
+    height: 45px !important;
+    border-radius: 0 !important;
+    width: 60% !important;
+    transition-duration: .3s !important;
+}
+.main form button[type="submit"]:hover{
+    background-color: #dd3400 !important;
+}
+.error{
+    color: tomato;
+    margin-block-end: 0;
+    margin-block-start: 5px;
+    font-size: 12px;
+}
+.main form a{
+    text-decoration: none;
+    color: #FF3C00;
+}
+
+@media screen and (max-width: 1024px){
+    .main form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .main form{
+        width: 90%;
+    }
+}

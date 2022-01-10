@@ -1,10 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { lazy } from 'react';
 import './App.css';
-import { Route, Router, BrowserRouter, Switch, Redirect, HashRouter } from "react-router-dom";
-import Ru from './Components/Ru/Ru';
-import Ua from './Components/Ua/Ua';
-import En from './Components/En/En';
+import { Route, BrowserRouter, Switch, Redirect } from "react-router-dom";
+import { connect } from 'react-redux';
+const Ru = lazy(() => import('./Components/Ru/Ru'));
+const Ua = lazy(() => import('./Components/Ua/Ua'));
+const En = lazy(() => import('./Components/En/En'));
 
 const App = (props) => {
 
@@ -12,7 +12,7 @@ const App = (props) => {
     <BrowserRouter>
       <Switch>
         <div className="main">
-          <Route path="/ru" render={() => <Ru />} exact />
+          <Route path="/ru" render={() => <Ru />} />
           <Redirect from="/" to="/ru"></Redirect>
           <Route path="/ua" render={() => <Ua />} />
           <Route path="/en" render={() => <En />} />
@@ -24,4 +24,9 @@ const App = (props) => {
   );
 }
 
-export default App;
+let mapStateToProps = (state) => ({
+  currentLanguage: state.common.currentLanguage,
+  isRegistered: state.common.isRegistered
+})
+
+export default connect(mapStateToProps, {})(App);

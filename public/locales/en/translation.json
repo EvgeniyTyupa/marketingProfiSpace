@@ -1,0 +1,11 @@
+{
+    "modal": {
+        "name": "Name*",
+        "phone": "Phone*",
+        "email": "Email*",
+        "service": "What service would you like to order?",
+        "submit": "Order now",
+        "error": "Required field!*",
+        "thankyou": "Thankyou!"
+    }
+}

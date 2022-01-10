@@ -110,7 +110,7 @@
     outline: none;
     color: white;
     font-family: 'Montserrat';
-    font-size: 35px;
+    font-size: 31px;
     width: 373px;
     height: 81px;
     border: none;
@@ -258,7 +258,7 @@
 
 .portfolio{
     width: 100%;
-    height: 1060px;
+    height: fit-content;
     display: flex;
     justify-content: center;
 }
@@ -284,6 +284,9 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+}
+.logosNew img {
+    width: 18%;
 }
 
 /* PAIN */
@@ -487,7 +490,7 @@
     background-color: #000C9F;
     color: white;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 31px;
     line-height: 49px;
     text-align: center;
     outline: none;
@@ -530,6 +533,39 @@
     display: flex;
     justify-content: space-between;
 }
+.blogItem a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px 30px;
+    width: calc(285px - 60px);
+    height: calc(400px - 40px);
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px -7px black;
+    text-decoration: none;
+}
+.blogItem img{
+    width: 225px;
+}
+.blogItem h4{
+    font-size: 14px;
+    color: black;
+}
+.blogItem span{
+    font-size: 12px;
+    color: black;
+    line-height: 18px;
+}
+.blogItem p{
+    color: #5797FE;
+    margin-block-end: 0;
+    font-weight: bold;
+}
+.blogItem a:hover p{
+    text-decoration: underline;
+}
 
 
 /* CONTACT */
@@ -567,6 +603,13 @@
     line-height: 29px;
     text-align: center;
 }
+.contactContainer a {
+    color: black;
+    text-decoration: none;
+}
+.contactContainer a:hover {
+    text-decoration: underline;
+}
 .contactContainer button{
     width: 373px;
     height: 89px;
@@ -603,6 +646,32 @@
     background-color: #FF7425;
     color: white;
 }
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    opacity: 0;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+    opacity: 0;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #FF3C00;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    opacity: 0;
+  }
+
+
 
 
 @media screen and (max-width: 1440px){
@@ -798,6 +867,10 @@
     }
     .services button{
         margin-top: 80px;
+        font-size: 26px;
+    }
+    .getService{
+        font-size: 26px;
     }
     /* BLOG */
     .blogContainer{
@@ -805,12 +878,17 @@
     }
     .loremIpad{
         display: flex;
+        width: 100%;
+        justify-content: space-around;
     }
     .lorem{
         display: none;
     }
     .contactContainer{
         width: 768px;
+    }
+    .contactContainer button{
+        font-size: 26px;
     }
 
 }
@@ -865,9 +943,6 @@
     }
     .getMoreIpad{
         width: 100%;
-    }
-    .portfolio{
-        height: 850px;
     }
     .giftContainer{
         width: 568px;

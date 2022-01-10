@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Modal.module.css';
+
 import styled from 'styled-components';
 
 
@@ -9,10 +9,11 @@ const ModalWindow = styled.div`
     background-color: transparent;
     position: fixed;
     justify-content: center;
-    display: ${({show}) => show ? 'flex' : 'none'};
+    display: flex;
+    
 
     .modal{
-        width: 70%;
+        width: 80%;
         height: 365px;
         background-color: #F9FCFF;
         box-shadow: 3px 3px 10px -5px black;
@@ -20,6 +21,8 @@ const ModalWindow = styled.div`
         flex-direction: column;
         align-items: center;
         padding: 10px 20px;
+        position: relative;
+        top: -100px;
     }
     .krest{
         width: 40px;
@@ -49,14 +52,27 @@ const ModalWindow = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
-
+    @media screen and (max-width: 1024px){
+        position: absolute;
+        margin-top: 400px;
+    }
+    @media screen and (max-width: 700px){
+        .modal{
+            position: fixed;
+            top: 30%;
+            z-index: 99999 !important;
+        }
+    }
 `;
 
 
 const Modal = (props) => {
     
+    console.log("modal");
+
     return(
         <ModalWindow show={props.show} >
             <div className="modal">
@@ -65,7 +81,7 @@ const Modal = (props) => {
                     <div className="krestik two"/>
                 </div>
                 <div className="text">
-                    <p>modal</p>
+                    <p>{props.text}</p>
                 </div>
                 
                 
