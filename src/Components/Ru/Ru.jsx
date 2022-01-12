@@ -671,7 +671,7 @@ class Ru extends React.Component {
                         <div className={classes.contactContainer}>
                             <h1 className={classes.contactHeader}>КОНТАКТЫ</h1>
                             <div className={classes.links}>
-                                <a href="https://www.facebook.com/profispaceschool" target="_blank"><img src={fb} /></a>
+                                <a href="https://www.facebook.com/profimarketingagency" target="_blank"><img src={fb} /></a>
                                 <a href="https://t.me/profi_space" target="_blank"><img src={tg} /></a>
                             </div>
                             <span>Ульяна Куликова <a href="tel:+380637678430"> +38 063 767 84 30 </a> <br />
@@ -905,7 +905,7 @@ class Ru extends React.Component {
                     <div className={mobile.contact} id="contactM">
                         <h3>КОНТАКТЫ</h3>
                         <div className={mobile.links}>
-                            <a href="https://www.facebook.com/profispaceschool" target="_blank"><img src={fb} /></a>
+                            <a href="https://www.facebook.com/profimarketingagency" target="_blank"><img src={fb} /></a>
                             <a href="https://t.me/profi_space" target="_blank"><img src={tg} /></a>
                         </div>
                         <span>Ульяна Куликова <a href="tel:+380637678430"> +38 063 767 84 30 </a> <br/>
